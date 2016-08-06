@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11173.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11143.2"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GuessHowManyFingers" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How Many Fingers" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lmz-2n-eTr">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="343" id="VFL-IR-cEv"/>
+                                    <constraint firstAttribute="height" constant="51" id="t4C-gV-Odm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tQ6-dB-cUD">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Gfi-gg-yqD"/>
+                                    <constraint firstAttribute="width" constant="135" id="UhG-KC-l3D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                <state key="normal" title="Submit Guess"/>
+                                <connections>
+                                    <action selector="submitBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zfQ-RF-Fj3"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D4u-XF-qGI">
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgU-ef-aFG">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="2U0-XY-yNq"/>
+                                    <constraint firstAttribute="width" constant="247" id="OXC-4n-0oH"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Guess How Many Fingers I'm Holding " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jra-l6-bmK">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="sHR-7A-BtU"/>
+                                    <constraint firstAttribute="width" constant="343" id="vLw-31-A1U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="D4u-XF-qGI" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="CBc-VV-GyZ"/>
+                            <constraint firstItem="fgU-ef-aFG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Hyx-Bk-FSP"/>
+                            <constraint firstItem="jra-l6-bmK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="S2P-nN-xjf"/>
+                            <constraint firstItem="fgU-ef-aFG" firstAttribute="top" secondItem="tQ6-dB-cUD" secondAttribute="bottom" constant="15" id="YXm-Yt-MJe"/>
+                            <constraint firstItem="lmz-2n-eTr" firstAttribute="top" secondItem="jra-l6-bmK" secondAttribute="bottom" constant="1" id="aHx-no-ESZ"/>
+                            <constraint firstItem="lmz-2n-eTr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="b7B-oe-i6R"/>
+                            <constraint firstItem="jra-l6-bmK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dne-Jr-0ew"/>
+                            <constraint firstItem="D4u-XF-qGI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hnd-Fg-wpm"/>
+                            <constraint firstItem="tQ6-dB-cUD" firstAttribute="top" secondItem="D4u-XF-qGI" secondAttribute="bottom" constant="20" id="o2z-y6-cqy"/>
+                            <constraint firstItem="D4u-XF-qGI" firstAttribute="top" secondItem="lmz-2n-eTr" secondAttribute="bottom" constant="8" id="ojL-T1-ckG"/>
+                            <constraint firstItem="tQ6-dB-cUD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rey-Fn-TUn"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerField" destination="fgU-ef-aFG" id="cFQ-5V-OKk"/>
+                        <outlet property="textField" destination="D4u-XF-qGI" id="Rxn-E2-qoI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="110.19490254872565"/>
+        </scene>
+    </scenes>
+</document>
